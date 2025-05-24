@@ -5,13 +5,15 @@
 use PSC\Config;
 include "class/PSC/Config.php";
 
-$Config = new Config("My cool site", "Stuff", "https://joe.com/");
+$Config = new Config(["name" => "Wow! This site sucks."]);
+
+$Config->Property("motto", "Wow! This site is good.");
 
 ?>
 
 <html>
     <head>
-        <title><?php echo $Config::Name()." | ".$Config::Motto(); ?></title>
+        <title><?php echo $Config->Property("motto")." | ".$Config->Property("motto"); ?></title>
     </head>
 
     <body>
