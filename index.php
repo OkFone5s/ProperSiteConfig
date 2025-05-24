@@ -13,7 +13,7 @@ $Config->Property("motto", "Wow! This site is good.");
 
 <html>
     <head>
-        <title><?php echo $Config->Property("motto")." | ".$Config->Property("motto"); ?></title>
+        <title><?php echo $Config->Property("name")." | ".$Config->Property("motto"); ?></title>
     </head>
 
     <body>
